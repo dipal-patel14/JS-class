@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+       <title>TODO supply a title</title>
+       <meta charset="UTF-8">
+       <meta name="viewport" 
+                  content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+       <details>
+           <summary> Stage2 </summary>
+           <div>
+              <h1> Directions using % operator.</h1>
+              <h2> Stage2 </h2>
+              <p id="p2">
+                Directions
+              </p>
+              <button onclick="doJob2()">Click Me</button>
+           </div>
+       <script>
+           var countVals = {
+               1: "Good M",
+               2: "Good A",
+               3: "Good E",
+               4: "Good N"
+           };
+
+           var count = 0;
+
+           function doJob2()
+           {
+               var para = document.getElementById("p2");
+               para.innerHTML = countVals[count = count++ % 4 + 1];
+               para.style.background = "rgb(" + count * 50 + 50 + "," + count * 50 + "," + count * 2 + 30 + ")";
+           }
+       </script>
+
+   </details>
+</body>
+</html>

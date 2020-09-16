@@ -1,0 +1,76 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    /* background-color: lightblue; */
+    /* background-image: url("Das-na-Das-Wallpaper-4k-1.jpg"); */
+    font-family: sans-serif;
+    object-fit: cover;
+    
+
+}
+/* body,html{
+    margin:0;
+    padding: 0;
+    width:80%;
+    height:80%;
+     */
+     body {
+       
+        height: 1000px;
+        width: 1300px;
+        margin: auto;
+        
+     }
+     .container{  /* whole body container*/
+
+    width:100%;
+    position: absolute;
+    top:0%;
+    left:0%;
+    text-align: center;
+    color: white;
+    
+}
+.container h1{     /*1st header */
+    text-transform: uppercase;
+    font-size: 50px;
+    margin: 0px;
+    letter-spacing: 5px;
+    
+
+}
+.container h2{    /* 2nd header */
+    /* text-transform: uppercase; */
+    font-size: 40px;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    margin: 0px ;
+    
+    
+}
+.count{       /* number boxes */
+    margin : 580px 0;
+}
+.counted{     /* inside number boxes */
+    display: inline-block;
+    width:120px;
+    height:80px;
+    border: 6px solid; 
+    margin: 0 30px;
+    font-size: 20px;
+    border-radius: 120px ;
+    color: white;
+    /* bottom: 10px; */
+    /* top: 300%; */
+    /* background-color: white; */
+}
+.counted span{  /*between boxes */
+    display:block;
+    font-size: 23px;
+    margin-top: 14px;
+    
+}
