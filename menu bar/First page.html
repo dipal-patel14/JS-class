@@ -5,38 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="First page.css">
+    <script src="https://kit.fontawesome.com/3e1d9d842a.js" crossorigin="anonymous"></script>
 </head>
 <body>
    
      <h1 id="top">Graph as service</h1>
-     <img src="download.jpg" width="150" height="150" alt="Avatar" class="profile">
+       <div class = "vertical">
+    </div>
+    
+        <img src="download.jpg" width="150" height="150" alt="Avatar" class="profile">
      <p id="name" ><b> SWAMIJI </b><br>
                 ydsuk@gmail.com
      </p>
-     <p id="icon"> Add Graph 
-     <i class="fal fa-plus-circle"></i>
-     </p>
+     <div>
+     <i id="icon" class="fas fa-plus-circle"> &nbsp; &nbsp; Add Graph</i>
+     <i class="fas fa-align-justify"> &nbsp; &nbsp; View Graph</i><br>
+     <i class="fas fa-draw-polygon">&nbsp; &nbsp; User Guide</i><br>
+     <i class="fas fa-table">&nbsp; &nbsp; Table</i>
+    </div>
+   
+    <div>
      <form>
          Name* :
-        <input type="text" name="name" required><br>
+        <input type="text" name="name" style="margin-left:55px"><br>
          Description* :
          
-        <input type="text" name="Description" required><br>
-        Add Schema* :
-        <input type="text" name="add schema" required><br>
-   
+        <input type="text" name="Description" style="margin-left:15px"><br>
+        <div>
+       <label> Add Schema* :</label>
+        <textarea id="test" rows="10" cols="58"></textarea>
+        <!-- <input type="text" name="add schema"style="margin-left:15px; width:400px; height:100px"><br> -->
+    </div>
         <button id="button" > Add Graph </button>
 
 
-    <!-- <textarea name = "message" rows="8" cols="60"></textarea> <br> -->
-
+   
      </form>
-
-    
-
-     <div class = "vertical">
     </div>
-    </div>    
+
+
+      
     
 
     

@@ -32,24 +32,26 @@ body{
 } 
  form {
       text-align: center;
-      margin: 25px;
+      margin-top: -250px;
       width: 40px auto;
       padding : 30px;
       font-size: 20px;
     
  }
- input[type=text]{
+  input[type=text]{
       padding :10px;
       width: 400px;
       margin:20px;
-      
+      text-align:top;
  }
     
 #button{
-    padding:8px;
+    padding:10px;
     width: 13%;
     background-color: #58738d;
     color: white;
+    margin-left:100px;
+    border-radius: 5px;
 }
 .profile {
    
@@ -62,12 +64,31 @@ body{
   }
      
  #name{ 
-     margin-top:50px;
+     margin-top:20px;
      font-size: 20px;
      color: rgb(85, 78, 78);
      
  }
+ 
+ #icon{
+     padding:10px;
+     margin-top:90px;
+     display: flex;
+     font-size: 25px;
+     margin-left:10px;
+     color:#41BCF7
+     
     
+ }
+.fas{
+    padding:10px;
+    /* display:flex; */
+    font-size: 25px;
+    margin-left:10px;
+    color:#696666;
+    margin-top:20px;
+}
 
-
-
+label{
+    
+}
