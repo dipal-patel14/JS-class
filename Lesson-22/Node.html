@@ -1,0 +1,69 @@
+/*
+
+* Http Server and simple page transfer in Node JS
+
+* Rajesh Patkar Institute Of Software Engineering.
+
+* copyright © Rajesh Patkar, All rights reserved.
+
+*/
+
+
+
+/****************************************************************
+
+Server.js
+
+****************************************************************/
+
+
+
+var rpise={};    here we used object to put http and fs it's properties http and fs should wrap in object rather then globle var.
+
+rpise.http = require('http');
+
+rpise.fs = require('fs');
+
+rpise.http.createServer(  you said http i want to create a server.
+
+function (request,response){ 
+
+    /* var server = rpise.http.createServer(lambda);
+    above sentence ma aapde server nam no object banavie chai ane teni ander lambda hook karie chai. 
+    below 2 lines called lambda */
+
+response.writeHead( 200,{ 'Content-Type' : 'text/html' });
+
+response.end(rpise.fs.readFileSync("./Documents/welcome.html"));
+
+}).listen(1337,'127.0.0.1');
+
+
+
+
+
+/*********************************************************************
+
+Welcome.html
+
+*********************************************************************/
+
+
+
+<html>
+
+<head>
+
+<title> RPISE </title>
+
+</head>
+
+<body>
+
+<h1> Welcome to Rajesh Patkar Institute's</h1>
+
+<h2> Node JS Expedition</h2>
+
+</body>
+
+</html>
