@@ -36,7 +36,9 @@ response.writeHead( 200,{ 'Content-Type' : 'text/html' });
 
 response.end(rpise.fs.readFileSync("./Documents/welcome.html"));
 
-}).listen(1337,'127.0.0.1');
+}).listen(1337,'127.0.0.1'); /* in this line i am telling server listen to port and ip address and accept the request which 
+                                coming on same machine. insted of line 27 & 39. 
+                                 you can write in 1 line rpise.http.createServer(lambda).listen('1337','127.0.0.1')*/
 
 
 
