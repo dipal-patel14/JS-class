@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+
+       <title>JQuery Tutorial Rajesh Patkar Institute</title>
+
+       <meta charset="UTF-8">
+
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   </head>
+
+   <body>
+
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+       
+
+       <h1>Learning JQuery</h1>
+
+       <a href="http://www.rajeshpatkar.com" target=”_blank”> Rajesh Patkar Institute </a>
+
+       <p class=button> Modify </p>
+
+       <!-- <p class=button> Modify </p>
+        <p class=button> Modify </p>
+        <p class=button> Modify </p>                 for practice -->
+
+       
+
+       
+
+       <script>
+
+           $(document).ready(function() {
+
+
+
+               $("a").click(function(event) {
+
+
+
+                   alert("Thanks for visiting!");
+
+
+
+               });
+
+
+
+           });
+
+       </script>
+
+       <script>
+
+           $(".button").on("click" , function(event){
+
+               if(this.innerHTML == "Modify")
+
+                   this.innerHTML = "testing done";
+
+               else
+
+                   this.innerHTML = "Modify"
+
+           })
+
+       </script>
+
+
+
+   </body>
+
+</html>

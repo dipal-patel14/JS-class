@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+
+       <title>JQuery Tutorial Rajesh Patkar Institute</title>
+
+       <meta charset="UTF-8">
+
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+       <style>
+
+           .selected{
+
+               border-width: 1px;
+
+               border-radius: 15px;
+
+               border-style: solid;
+
+               background-color: darkgreen;
+
+               width : 100px;
+
+               color : azure;
+
+               text-align: center
+
+           }
+
+       </style>
+
+   </head>
+
+   <body>
+
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+       
+
+       
+
+       <h1>Learning JQuery</h1>
+
+       <a href="http://www.rajeshpatkar.com" target=”_blank”> Rajesh Patkar Institute </a>
+
+       
+
+       
+
+       
+
+       <script>
+
+           $(document).ready(function() {
+
+
+
+               $("a").click(function(event) {
+
+
+
+                   alert("Thanks for visiting!");
+
+
+
+               });
+
+
+
+           });
+
+       </script>
+
+       
+
+       <ul>
+
+           <li>
+
+               apple
+
+           </li>
+
+           <li>
+
+               orange
+
+           </li>
+
+           <li>
+
+               lemon
+
+           </li>
+
+           <li>
+
+               WaterMelon
+
+           </li>
+
+           <li>
+
+               Mango
+
+           </li>
+
+           <li>
+
+               Banana
+
+           </li>
+
+       </ul>
+
+       
+
+       <button class="button">Modify</button>
+
+       <script>
+
+           $(".button").on("click" , function(event){
+
+               if(this.innerHTML == "Modify")
+
+               {
+
+                   this.innerHTML = "Reset";
+
+                   $("li").addClass("selected");
+
+               }
+
+               else
+
+               {
+
+                   this.innerHTML = "Modify"
+
+                   $("li").removeClass("selected");
+
+               }
+
+           })
+
+       </script>
+
+   </body>
+
+</html>

@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+
+       <title>JQuery Tutorial Rajesh Patkar Institute</title>
+
+       <meta charset="UTF-8">
+
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+       <style>
+
+           .selected{
+
+               border-width: 1px;
+
+               border-radius: 15px;
+
+               border-style: solid;
+
+               background-color: darkgreen;
+
+               width : 100px;
+
+               color : azure;
+
+               text-align: center
+
+           }
+
+       </style>
+
+   </head>
+
+   <body>
+
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+
+
+
+       <h1>Learning JQuery</h1>
+
+       <a href="http://www.rajeshpatkar.com"> Rajesh Patkar Institute </a>
+
+
+
+       <script>
+
+           $("a").click(function(event) {
+
+
+
+               event.preventDefault();
+
+
+
+               $(this).hide("slow");
+
+
+
+           });
+
+       </script>
+
+
+
+   </body>
+
+</html>
