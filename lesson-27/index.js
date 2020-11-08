@@ -1,3 +1,6 @@
+//stage -1
+
+
 // var express = require('express');
 // var app = express();
 
@@ -29,6 +32,8 @@
 //   console.log('ExpressJS is running on port 8089');
 // });
 
+
+// stage -2
 var express = require('express');
 
 var app = express();
@@ -159,12 +164,12 @@ app.get('/Failure', function (req, res) {
  
  });
  
- 
- 
- 
- 
- app.listen(8000, function () {
+  app.listen(8000, function () {
  
     console.log('ExpressJS is running on port 8089');
  
  });
+
+
+
+

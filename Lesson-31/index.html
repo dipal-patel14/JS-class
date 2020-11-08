@@ -1,0 +1,125 @@
+<!--  Stage -1
+    
+    <script src="/socket.io/socket.io.js"></script>
+
+<h1>
+
+Hello World
+
+</h1>
+
+
+
+<script>
+
+const socket = io();
+
+socket.on('message',(msg) => console.log(msg));
+
+</script> -->
+
+
+<!-- Stage -2 -->
+
+<!-- <script src="/socket.io/socket.io.js"></script>
+
+
+
+<h1>
+
+Hello World
+
+</h1>
+
+<script>
+
+const socket = io();
+
+socket.on('message',(msg) => console.log(msg));
+
+socket.on('CustomEvent', () => console.log("CustomEvent!!"));
+
+</script>
+
+<div id="show">
+
+</div> -->
+
+
+<!-- Stage 3 -->
+
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="/socket.io/socket.io.js"></script>
+
+<h1>
+
+Hello World
+
+</h1>
+
+<script>
+
+function showData(data)
+
+{
+
+for(let i = 0; i < data.times; i++)
+
+{
+
+$("#show").append(data.message + "<br>");
+
+}
+
+}
+
+const socket = io();
+
+socket.on('message',(msg) => console.log(msg));
+
+socket.on('CustomEvent', (data) => showData(data));
+
+</script>
+
+<div id="show">
+
+</div> -->
+
+
+<!-- Stage -4 -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="/socket.io/socket.io.js"></script>
+
+
+
+<h1>
+
+Hello World
+
+</h1>
+
+<script>
+
+const socket = io();
+
+socket.on('message',(msg) => console.log(msg));
+
+socket.on("setData", (data) => $("#show").append(data));
+
+function clickHadler(){
+
+socket.emit('getData');
+
+}
+
+</script>
+
+<div id="show">
+
+</div>
+
+<button onclick="clickHadler()">Get Data</button>

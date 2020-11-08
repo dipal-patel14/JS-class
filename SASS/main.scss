@@ -7,27 +7,39 @@
   html {
       font-size: 62.5%;
   }
+  @mixin flexprop {   //set of properties ne again and again na lakhvi hoie to @mixin variable ma mukileva ni ane jyare use karvani hoie tyare @include ane pachi var nam kahvanu.
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
-  $bg-color: #2c2d6b;   // any color if you want to use again and again then use $ and any properties.
+  $bg-color: #2c2d6b;   // any properties if you want to use again and again then use $ and any properties.
   //Operators
   //Variables
-
-
+  //Nesting
+  //Mixin
+  //Parameter
  .main_header{
      width: 100vw;
      height: 100vh;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-direction: column;
+    @include flexprop;
      background: $bg-color;
-    } 
+   
 
 h1 {
     color:#da9517;
     font-size: 5rem + 5rem;
+    &:hover{
+        color: white;
+    }
 }
+
 p {
     color:#da9517;
     font-size: 5rem + 5rem;
+    &:hover{                     //& lakhvathi inheritance thay p ni properties
+        color: white;
+    }
+}  
 }

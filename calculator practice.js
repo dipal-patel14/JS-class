@@ -27,5 +27,8 @@
 
 
 
-b = [0,1,2,0];
-console.log(b.lastIndexOf(1));
+p = [0,1,2,0];
+console.log(p.lastIndexOf(1));
+
+a = [0,2,3];
+console.log(a.lastIndexOf(1));
