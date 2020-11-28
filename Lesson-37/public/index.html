@@ -1,0 +1,207 @@
+<!-- <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<div id="root"> 
+</div>
+<h1> Hello React</h1>
+<script type="text/babel">
+</script> -->
+
+
+<!-- use of react-dom  Hello world -->
+
+<!-- <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<div id="root"> 
+</div>
+
+<script type="text/babel">
+ReactDOM.render(
+    <h1>Hello World!</h1>,
+    document.getElementById("root")
+);
+</script> -->
+
+
+<!-- ReactDOM templating -->
+
+<!-- <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<div id="root"> 
+</div>
+
+
+<script type="text/babel">
+
+ let name = "Archan";
+// let surname = "P"
+
+ReactDOM.render(
+    <h1>Hello {name}!</h1>,
+    document.getElementById("root")
+);
+</script> -->
+
+
+<!-- without JSX  -->
+
+<!-- <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+<div id="root"> 
+</div>
+
+
+<script>
+
+let greeting = React.createElement("h1",{},"Hello World!&&&");
+
+ReactDOM.render(
+    greeting,
+    document.getElementById("root")
+);
+
+</script> -->
+
+
+<!-- JSX is an expression -->
+
+
+<!-- <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<div id="root">
+</div>
+
+<script type="text/babel">
+
+let one = <p> This is a paragraph </p>;
+console.log(one);
+
+let a = [];
+for(let i = 0; i < 5; i++)
+{
+    a.push(<button> {i} </button>);
+}
+console.log(a);
+
+function f1(flag)
+{
+    if(flag) return <div>This is div</div>;
+    else return <textarea>This is text area</textarea>
+}
+console.log(f1(true));
+console.log(f1(false));
+
+ReactDOM.render(
+    <div>
+       {a}
+       {f1(true)}
+       {f1(false)}
+    </div>,
+    document.getElementById("root")
+);
+
+
+</script>  -->
+
+
+<!-- composite elements -->
+
+<!-- <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<div id="root"> 
+</div>
+
+
+<script type="text/babel"> 
+ReactDOM.render(
+    <div>
+        <div>Div1</div>
+        <div>Div2</div>
+        <div>Div3</div>
+        <div>Div4</div>
+        <div>Div5</div>
+    </div>,
+   document.getElementById("root")
+);
+</script> -->
+
+<!-- Immutability and rendering -->
+
+<!-- <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<div id="root"> 
+</div>
+
+
+<script type="text/babel">
+ReactDOM.render(
+    <h1>Hello World!</h1>,
+    document.getElementById("root")
+);
+
+ReactDOM.render(
+    <h1>Hello Universe</h1>,
+    document.getElementById("root")
+);
+</script> -->
+
+
+<!-- updating and diffing -->
+
+
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<div id="root"> 
+</div>
+
+<button onclick="incrementCount()">+</button>
+<button onclick="decrementCount()">-</button>
+
+<script type="text/babel">
+
+let count = 0;
+
+function getCount()
+{
+    return <h1> {count} </h1>;
+}
+
+function incrementCount()
+{
+    count++;
+    updateUI();
+}
+
+function decrementCount()
+{
+    count--;
+    updateUI();
+}
+
+function updateUI()
+{
+    ReactDOM.render(
+        getCount(),
+        document.getElementById("root")
+    );
+}
+
+ReactDOM.render(
+    getCount(),
+    document.getElementById("root")
+);
+</script>

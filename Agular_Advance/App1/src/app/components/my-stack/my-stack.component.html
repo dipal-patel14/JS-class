@@ -1,0 +1,182 @@
+<!-- <div class="jumbotron">
+
+    <h1 class="display-3" style="text-align:Center">Stack</h1>
+  
+    <div class="form-group">
+  
+       <textarea disabled style="height:10em" class="form-control">{{data}}</textarea>
+  
+    </div>
+  
+    <div class="input-group">
+  
+      <span class="input-group-btn">
+  
+          <button type="button" (click)="pushHandler()" class="btn btn-outline-info">Push</button>
+  
+      </span>
+  
+      &nbsp;
+  
+      <input type="text" #d (input)="textFieldInput = d.value" class="form-control" placeholder="Enter a Value">
+  
+      &nbsp;
+  
+      <span class="input-group-btn">
+  
+          <button type="button"  class="btn btn-outline-danger">pop</button>
+  
+      </span>
+  
+    </div>
+  
+  </div> -->
+
+
+  <!-- <div class="jumbotron">
+
+    <h1 class="display-3" style="text-align:Center">Stack</h1>
+  
+    <div class="form-group">
+  
+       <div>
+  
+          <ul  class="list-group">
+  
+            <li *ngFor="let num of stack.stk" class="list-group-item list-group-item-dark">
+  
+              {{num}}
+  
+            </li>
+  
+          </ul>
+  
+       </div>
+  
+    </div>
+  
+    <div class="input-group">
+  
+      <span class="input-group-btn">
+  
+          <button type="button" (click)="pushHandler()" class="btn btn-outline-info">Push</button>
+  
+      </span>
+  
+      &nbsp;
+  
+      <input type="text" id="val" class="form-control" placeholder="Enter a Value">
+  
+      &nbsp;
+  
+      <span class="input-group-btn">
+  
+          <button type="button" (click)="popHandler()" class="btn btn-outline-danger">pop</button>
+  
+      </span>
+  
+    </div>
+  
+  </div> -->
+
+  <!-- service stage 1 -->
+
+
+  <!-- <div class="jumbotron">
+
+    <h1 class="display-3" style="text-align:Center">Stack</h1>
+  
+    <div class="form-group">
+  
+       <div>
+  
+          <ul  class="list-group">
+  
+            <li *ngFor="let num of stack.stk" class="list-group-item list-group-item-dark">
+  
+              {{num}}
+  
+            </li>
+  
+          </ul>
+  
+       </div>
+  
+    </div>
+  
+    <div class="input-group">
+  
+      <span class="input-group-btn">
+  
+          <button type="button" (click)="pushHandler()" class="btn btn-outline-info">Push</button>
+  
+      </span>
+  
+      &nbsp;
+  
+      <input type="text" id="val" class="form-control" placeholder="Enter a Value">
+  
+      &nbsp;
+  
+      <span class="input-group-btn">
+  
+          <button type="button" (click)="popHandler()" class="btn btn-outline-danger">pop</button>
+  
+      </span>
+  
+    </div>
+  
+  </div> -->
+
+
+  <!-- service stage 2 -->
+
+  <div class="jumbotron">
+
+    <h1 class="display-3" style="text-align:Center">Stack</h1>
+  
+    <div class="form-group">
+  
+       <div>
+  
+          <ul  class="list-group">
+  
+            <span *ngFor="let num of stack.stk; let i = index">
+  
+             <li *ngIf="i >= stack.sp" class="list-group-item list-group-item-dark">
+  
+               {{num}}
+  
+             </li>
+  
+            </span>
+  
+          </ul>
+  
+       </div>
+  
+    </div>
+  
+    <div class="input-group">
+  
+      <span class="input-group-btn">
+  
+          <button type="button" (click)="pushHandler()" class="btn btn-outline-info">Push</button>
+  
+      </span>
+  
+      &nbsp;
+  
+      <input type="text" id="val" class="form-control" placeholder="Enter a Value">
+  
+      &nbsp;
+  
+      <span class="input-group-btn">
+  
+          <button type="button" (click)="popHandler()" class="btn btn-outline-danger">pop</button>
+  
+      </span>
+  
+    </div>
+  
+  </div>
